@@ -1,81 +1,195 @@
-// $('body').click(function(){
-
-// alert('hey');
-
-// });
-
-// var q1 = 15,
-// q2= 23,
-// q3= 17,
-// q4= 9;
-// var userClick1 = ;
-
-// var A = 1,
-// B = 2,
-// C = 3,
-// D = 4;
-
-
-// var answerKey = ['1', '2', '3', '4'];
-
-// if ( A == answerKey[0]){
-// 	console.log("hey");
-// }
-
-// else {
-// 	console.log("wrong");
-// };
-
-
-// var right = 0,
-//     wrong = 0;
-
-// var userSelection = null;
-
-// var answerKey = ["15", "UF", "Gator", "Jim McElwain", "Gainesville", ];
-// // console.log(answerKey[3]);
-
-// var answer1 = $(".answerA").click(function(){
-// 	console.log(answerKey[0]);
-// });
-
-
 var right = 0,
-wrong= 0;
-
-$("input:radio[name=Q1]").click(function() {
-    var value = $(this).val();
-    if(value == 'A')
-        // $('div.centimetreUser').show(200);
-    console.log('right!');
-    right++;
-
-    else {
-    	console.log('wrong!');
-    	wrong++;
-    }
-});
+    wrong = 0,
+    userCounter= 0;
 
 
+// function question1() {
+
+//     $("#answerA").one("click", function() {
+//         right++;
+
+//         // console.log("right");
+//         // console.log(right);
+
+//     });
+
+//     $("#answerB, #answerC, #answerD").one("click", function() {
+//         wrong++;
+//         // console.log("wrong");
+//         // console.log(wrong);
+//     });
 
 
-
-
-// var question1Answers = ["15", "23", "17", "9"];
-
-// if (userSelection > question1Answers[0]) {
-//     console.log("right");
-// } else {
-//     console.log("wrong");
 // };
 
+// question1();
+
+// function question2() {
+
+//     $("#answerC_ii").one("click", function() {
+//         right++;
+
+//         // console.log("right");
+//     });
+
+//     $("#answerA_ii, #answerB_ii, #answerD_ii").one("click", function() {
+
+//         // console.log("wrong");
+//         wrong++;
+//     });
+
+// };
+
+// question2();
+
+// function question3() {
+
+//     $("#answerD_iii").one("click", function() {
+//         right++;
+
+//         // console.log("right");
+//     });
+
+//     $("#answerA_iii, #answerB_iii, #answerC_iii").one("click", function() {
+//         wrong++;
+//         // console.log("wrong");
+//     });
+
+// };
+
+// question3();
+
+// function question4() {
+
+//     $("#answerC_iv").one("click", function() {
+//         right++;
+
+//         // console.log("right");
+//     });
+
+//     $("#answerA_iv, #answerB_iv, #answerD_iv").one("click", function() {
+//         wrong++;
+//         // console.log("wrong");
+//     });
+
+// };
+
+// question4();
+
+$("#answerA").one("click", function() {
+        right++;
+       var correctTally = userCounter + right;
+       console.log(correctTally);
+
+        // console.log("right");
+        // console.log(right);
+
+    });
+
+    $("#answerB, #answerC, #answerD").one("click", function() {
+        wrong++;
+        var wrongTally = userCounter + wrong;
+        console.log(wrongTally);
+        // console.log("wrong");
+        // console.log(wrong);
+    });
 
 
+$("#answerC_ii").one("click", function() {
+
+        right++;
+          var correctTally = userCounter + right;
+       console.log(correctTally);
 
 
+        // console.log("right");
+    });
+
+    $("#answerA_ii, #answerB_ii, #answerD_ii").one("click", function() {
+
+        // console.log("wrong");
+        wrong++;
+         var wrongTally = userCounter + wrong;
+        console.log(wrongTally);
+    });
 
 
+$("#answerD_iii").one("click", function() {
+        right++;
+        var correctTally = userCounter + right;
+       console.log(correctTally);
 
-// console.log(answerKey[0]);
 
-// console.log();
+        // console.log("right");
+    });
+
+    $("#answerA_iii, #answerB_iii, #answerC_iii").one("click", function() {
+        wrong++;
+            var wrongTally = userCounter + wrong;
+        console.log(wrongTally);
+        // console.log("wrong");
+    });
+
+$("#answerC_iv").one("click", function() {
+        right++;
+        var correctTally = userCounter + right;
+       console.log(correctTally);
+
+
+        // console.log("right");
+    });
+
+    $("#answerA_iv, #answerB_iv, #answerD_iv").one("click", function() {
+        wrong++;
+            var wrongTally = userCounter + wrong;
+        console.log(wrongTally);
+        // console.log("wrong");
+    });
+
+ $("#answerB_v").one("click", function() {
+        right++;
+       var correctTally = userCounter + right;
+       console.log(correctTally);
+
+
+        // console.log(right);
+    });
+
+    $("#answerA_v, #answerC_v, #answerD_v").one("click", function() {
+        wrong++;
+            var wrongTally = userCounter + wrong;
+        console.log(wrongTally);
+        // console.log("wrong");
+        // console.log(wrong);
+    });
+
+    // console.log(right);
+    // console.log(wrong);
+
+$("#rightFinal").text(correctTally);
+$("#wrongFinal").text(wrongTally);
+
+// function question5() {
+
+//     $("#answerB_v").one("click", function() {
+//         right++;
+
+//         // console.log(right);
+//     });
+
+//     $("#answerA_v, #answerC_v, #answerD_v").one("click", function() {
+//         wrong++;
+//         // console.log("wrong");
+//         // console.log(wrong);
+//     });
+
+// };
+
+// question5();
+
+// function total() {
+//     console.log(right);
+//     console.log(wrong);
+// };
+
+// total();
