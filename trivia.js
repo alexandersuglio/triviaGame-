@@ -27,18 +27,34 @@
 // };
 
 
+// var right = 0,
+//     wrong = 0;
+
+// var userSelection = null;
+
+// var answerKey = ["15", "UF", "Gator", "Jim McElwain", "Gainesville", ];
+// // console.log(answerKey[3]);
+
+// var answer1 = $(".answerA").click(function(){
+// 	console.log(answerKey[0]);
+// });
+
+
 var right = 0,
-    wrong = 0;
+wrong= 0;
 
-var userSelection = null;
+$("input:radio[name=Q1]").click(function() {
+    var value = $(this).val();
+    if(value == 'A')
+        // $('div.centimetreUser').show(200);
+    console.log('right!');
+    right++;
 
-var answerKey = ["15", "UF", "Gator", "Jim McElwain", "Gainesville", ];
-// console.log(answerKey[3]);
-
-var answer1 = $(".answerA").click(function(){
-	console.log(answerKey[0]);
+    else {
+    	console.log('wrong!');
+    	wrong++;
+    }
 });
-
 
 
 
