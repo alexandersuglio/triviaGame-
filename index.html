@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Trivia Main Page</title>
-	<link rel="stylesheet" href="trivia.css">
-</head>
-<body>
 
-<h1> UF Trivia Quiz! </h1>
-<a href="trivia_quiz.html" class="beginButton"> CLICK TO BEGIN! </a>
-	
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Main Page</title>
+    <link rel="stylesheet" href="trivia.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1> UF Trivia Quiz! </h1>
+    <button class="beginButton"> CLICK TO BEGIN! </button>
+    <div id="quizBody">
+        <h1 class="questionHeader"> Question #1 </h1>
+        <p class="questionBody"> What was Tim Tebow's Jersey Number? </p>
+        <div class="question1">
+            <input id="answerA" type="radio" name="Q1" value="A"> 15 </input>
+            <input id="answerB" type="radio" name="Q1" value="B"> 23 </input>
+            <input id="answerC" type="radio" name="Q1" value="C"> 17 </input>
+            <input id="answerD" type="radio" name="Q1" value="D"> 9 </input>
+            </br>
+        </div>
+        <h1 class="questionHeader"> Question #2 </h1>
+        <p class="questionBody"> Who is the best college football team? </p>
+        <div class="question2">
+            <input id="answerA_ii" type="radio" name="Q2" value="A"> FSU </input>
+            <input id="answerB_ii" type="radio" name="Q2" value="B"> UCF </input>
+            <input id="answerC_ii" type="radio" name="Q2" value="C"> UF </input>
+            <input id="answerD_ii" type="radio" name="Q2" value="D"> OSU </input>
+            </br>
+        </div>
+        <h1 class="questionHeader"> Question 3 </h1>
+        <p class="questionBody"> What is the UF Mascot? </p>
+        <div class="question2">
+            <input id="answerA_iii" type="radio" name="Q3" value="A"> Seminole </input>
+            <input id="answerB_iii" type="radio" name="Q3" value="B"> Knight </input>
+            <input id="answerC_iii" type="radio" name="Q3" value="C"> Owl </input>
+            <input id="answerD_iii" type="radio" name="Q3" value="D"> Gator </input>
+            </br>
+        </div>
+        <h1 class="questionHeader"> Question 4 </h1>
+        <p class="questionBody"> Who is the Current UF Football Coach? </p>
+        <div class="question2">
+            <input id="answerA_iv" type="radio" name="Q4" value="A"> Steve Spurrier </input>
+            <input id="answerB_iv" type="radio" name="Q4" value="B"> Will Muschamp </input>
+            <input id="answerC_iv" type="radio" name="Q4" value="C"> Jim McElwain </input>
+            <input id="answerD_iv" type="radio" name="Q4" value="D"> Urban Meyer </input>
+            </br>
+        </div>
+        <h1 class="questionHeader"> Question 5 </h1>
+        <p class="questionBody"> What City is UF in? </p>
+        <div class="question2">
+            <input id="answerA_v" type="radio" name="Q5" value="A"> Orlando </input>
+            <input id="answerB_v" type="radio" name="Q5" value="B"> Gainesville </input>
+            <input id="answerC_v" type="radio" name="Q5" value="C"> Tallahassee </input>
+            <input id="answerD_v" type="radio" name="Q5" value="D"> Fort Lauderdale </input>
+            </br>
+        </div>
+        <div id="result">
+            <h1> Results! </h1>
+            <p>Correct: <span id="correctFinal"> 0 </span></p>
+            <p>Wrong: <span id="wrongFinal"> 0 </span></p>
+            <!-- <button class="resetButton"> Retake Quiz </button> -->
+        </div>
+            <button class="submitButton"> SUBMIT </button>
+        
+    </div>
+    <script src="trivia.js"></script>
 </body>
+
 </html>
+<!--  <div id="result">
+</div>
+ -->

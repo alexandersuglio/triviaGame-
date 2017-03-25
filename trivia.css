@@ -2,17 +2,23 @@ body {
 	/*background-color: blue;*/
 }
 
-a {
+button {
 	color: white;
 	text-decoration: none !important;
 	border-style: solid;
 	padding: 10px 40px;
 background-color: green;
-position: absolute;
+/*position: absolute;
 bottom: 100px;
 left: 400px;
-/*margin-top: 1300px;*/
+*//*margin-top: 1300px;*/
 
 }
 
+/*#quizBody {
+	width: 900px;
+	height: 500px;
+	background-color: orange;
+}
+*/
 
