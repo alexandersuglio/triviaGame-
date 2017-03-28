@@ -1,5 +1,8 @@
 body {
 	/*background-color: blue;*/
+	/*background-image: url("http://gainesvillescene.com/wp-content/uploads/2014/04/Ben-Hill-Griffin-Stadium1.jpg");
+	background-repeat: no-repeat;
+	background*/
 }
 
 button {
@@ -8,17 +11,9 @@ button {
 	border-style: solid;
 	padding: 10px 40px;
 background-color: green;
-/*position: absolute;
-bottom: 100px;
-left: 400px;
-*//*margin-top: 1300px;*/
+
 
 }
 
-/*#quizBody {
-	width: 900px;
-	height: 500px;
-	background-color: orange;
-}
-*/
+
 

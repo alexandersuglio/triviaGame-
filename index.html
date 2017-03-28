@@ -12,6 +12,8 @@
     <h1> UF Trivia Quiz! </h1>
     <button class="beginButton"> CLICK TO BEGIN! </button>
     <div id="quizBody">
+    <div id="timerDataHereSec"></div>
+        
         <h1 class="questionHeader"> Question #1 </h1>
         <p class="questionBody"> What was Tim Tebow's Jersey Number? </p>
         <div class="question1">
@@ -61,10 +63,9 @@
             <h1> Results! </h1>
             <p>Correct: <span id="correctFinal"> 0 </span></p>
             <p>Wrong: <span id="wrongFinal"> 0 </span></p>
-            <!-- <button class="resetButton"> Retake Quiz </button> -->
+            <span id="percentageShow"> 0 </span>
         </div>
-            <button class="submitButton"> SUBMIT </button>
-        
+        <button class="submitButton"> SUBMIT </button>
     </div>
     <script src="trivia.js"></script>
 </body>
